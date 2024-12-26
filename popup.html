@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube subscription manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3 class="title">SubSync</h3>
+  <p class="description">Simplify subscription management: Extract lists and refine your channel preferences with ease.</p>
+  <div class="button-group">
+    <button id="extractSubscriptions">Extract List</button>
+    <button id="unsubscribeAll" class="danger">Unsubscribe All</button>
+  </div>
+  <div class="subscription-section">
+    <input type="file" id="fileInput" accept=".txt">
+    <div>
+      <label for="delayInput">Delay (seconds):</label>
+      <input type="number" id="delayInput" value="5" min="3" max="10">
+    </div>
+    <button id="startButton">Start Subscribing</button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
